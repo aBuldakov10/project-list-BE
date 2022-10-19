@@ -6,7 +6,7 @@ const fastify = Fastify({
 
 fastify.register(import('@fastify/cookie'));
 fastify.register(import('@fastify/cors'), {
-  origin: ['http://localhost:63342', 'http://localhost:3000', 'http://localhost:3001'],
+  origin: 'http://localhost:63342',
 });
 fastify.register(import('@fastify/multipart'), {
   addToBody: true,
